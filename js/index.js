@@ -14,11 +14,19 @@ $(document).ready(function(){
 
         valArray = val.split(" ");
 
+        
+
+        isSpace = checkSpace(valArray)
+
+
+        valArray = isSpace
+
         console.log(valArray)
         isValid = checkValid(valArray)
-
+        
         console.log('Valid Expression?: ' + isValid)
 
+        
        
 
         //search for each case in the string

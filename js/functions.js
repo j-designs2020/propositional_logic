@@ -1,3 +1,33 @@
+
+//eliminates extra spaces a user may have entered
+function checkSpace(val){
+
+    
+
+    for(let i=0; i<val.length; i++){
+
+        
+
+            if(!val[i]){
+                
+                val.splice(i, 1)
+                checkSpace(val)
+                    
+            }
+
+        
+        
+
+        
+    }
+    
+    return val 
+
+}
+
+
+
+
 //checks to see if all characters in expression are valid
 function checkValid(val){
 
@@ -22,6 +52,8 @@ function checkValid(val){
 
 
 }
+
+
 
 
 //finds the position of each term in the expression
@@ -91,3 +123,5 @@ function checkOps(val){
     return posArr 
 
 }
+
+
